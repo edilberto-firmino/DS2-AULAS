@@ -22,6 +22,11 @@ class Carro:
         if self.velocidade < 0:
             self.velocidade = 0
         return f"{self.modelo} reduziu para {self.velocidade} km/h."
+    
+    def parar(self, reducao, tempo, distancia):
+        self.velocidade -= reducao
+        self.velocidade = 0
+        return f"{self.modelo} parou completamente."
 
 
 # 👇 ESTA FUNÇÃO PRECISA EXISTIR PARA O principal.py ENXERGAR
